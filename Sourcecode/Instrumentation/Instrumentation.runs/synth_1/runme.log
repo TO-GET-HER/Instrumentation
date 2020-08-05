@@ -1,0 +1,345 @@
+
+*** Running vivado
+    with args -log Instrumentation.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Instrumentation.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Instrumentation.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/fpga/IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2018.3/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:Driver_SK6805:1.0'. The one found in IP location 'e:/fpga/IP_Core/Driver-SK6805-IP/IP' will take precedence over the same IP in location e:/fpga/IP_Core/LED-IP/Driver-SK6805-IP/IP
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dvi:1.2'. The one found in IP location 'e:/fpga/IP_Core/Mini-HDMI-IP/IP/RGB2DVI_IP' will take precedence over the same IP in location e:/fpga/IP_Core/RGB2DVI_IP
+Command: synth_design -top Instrumentation -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9432 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 479.961 ; gain = 105.184
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Instrumentation' [E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/new/Instrumentation.v:21]
+INFO: [Synth 8-6157] synthesizing module 'clk_5_10' [E:/fpga/Instrumentation/Instrumentation.runs/synth_1/.Xil/Vivado-4924-zlxt/realtime/clk_5_10_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_5_10' (1#1) [E:/fpga/Instrumentation/Instrumentation.runs/synth_1/.Xil/Vivado-4924-zlxt/realtime/clk_5_10_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Driver_DAC_0' [E:/fpga/Instrumentation/Instrumentation.runs/synth_1/.Xil/Vivado-4924-zlxt/realtime/Driver_DAC_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_DAC_0' (2#1) [E:/fpga/Instrumentation/Instrumentation.runs/synth_1/.Xil/Vivado-4924-zlxt/realtime/Driver_DAC_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Driver_ADC_0' [E:/fpga/Instrumentation/Instrumentation.runs/synth_1/.Xil/Vivado-4924-zlxt/realtime/Driver_ADC_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_ADC_0' (3#1) [E:/fpga/Instrumentation/Instrumentation.runs/synth_1/.Xil/Vivado-4924-zlxt/realtime/Driver_ADC_0_stub.v:6]
+WARNING: [Synth 8-689] width (21) of port connection 'Period' does not match port width (18) of module 'Driver_ADC_0' [E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/new/Instrumentation.v:67]
+INFO: [Synth 8-6157] synthesizing module 'Driver_UART_0' [E:/fpga/Instrumentation/Instrumentation.runs/synth_1/.Xil/Vivado-4924-zlxt/realtime/Driver_UART_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_UART_0' (4#1) [E:/fpga/Instrumentation/Instrumentation.runs/synth_1/.Xil/Vivado-4924-zlxt/realtime/Driver_UART_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'UART_Send' [E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/new/UART_Send.v:21]
+WARNING: [Synth 8-5788] Register Tx_En_reg in module UART_Send is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/new/UART_Send.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'UART_Send' (5#1) [E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/new/UART_Send.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Instrumentation' (6#1) [E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/new/Instrumentation.v:21]
+WARNING: [Synth 8-3331] design UART_Send has unconnected port Enable
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 535.422 ; gain = 160.645
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 535.422 ; gain = 160.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 535.422 ; gain = 160.645
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_UART_0/Driver_UART_0/Driver_UART_0_in_context.xdc] for cell 'UART0'
+Finished Parsing XDC File [e:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_UART_0/Driver_UART_0/Driver_UART_0_in_context.xdc] for cell 'UART0'
+Parsing XDC File [E:/fpga/Instrumentation/Instrumentation.runs/synth_1/.Xil/Vivado-4924-zlxt/Driver_ADC_0/Driver_ADC_0/Driver_ADC_0_in_context.xdc] for cell 'Driver_ADC0'
+Finished Parsing XDC File [E:/fpga/Instrumentation/Instrumentation.runs/synth_1/.Xil/Vivado-4924-zlxt/Driver_ADC_0/Driver_ADC_0/Driver_ADC_0_in_context.xdc] for cell 'Driver_ADC0'
+Parsing XDC File [e:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_DAC_0/Driver_DAC_0/Driver_DAC_0_in_context.xdc] for cell 'Driver_DAC0'
+Finished Parsing XDC File [e:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_DAC_0/Driver_DAC_0/Driver_DAC_0_in_context.xdc] for cell 'Driver_DAC0'
+Parsing XDC File [e:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/clk_5_10/clk_5_10/clk_5_10_in_context.xdc] for cell 'clk_division'
+Finished Parsing XDC File [e:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/clk_5_10/clk_5_10/clk_5_10_in_context.xdc] for cell 'clk_division'
+Parsing XDC File [E:/fpga/Instrumentation/Instrumentation.srcs/constrs_1/new/system.xdc]
+Finished Parsing XDC File [E:/fpga/Instrumentation/Instrumentation.srcs/constrs_1/new/system.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/fpga/Instrumentation/Instrumentation.srcs/constrs_1/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Instrumentation_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Instrumentation_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/fpga/Instrumentation/Instrumentation.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/fpga/Instrumentation/Instrumentation.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 791.020 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 791.020 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 791.020 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 791.020 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 791.020 ; gain = 416.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 791.020 ; gain = 416.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  e:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/clk_5_10/clk_5_10/clk_5_10_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  e:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/clk_5_10/clk_5_10/clk_5_10_in_context.xdc, line 6).
+Applied set_property DONT_TOUCH = true for UART0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Driver_ADC0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Driver_DAC0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk_division. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 791.020 ; gain = 416.242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'Pulse_Init_Flag_reg' in module 'UART_Send'
+INFO: [Synth 8-5544] ROM "Pulse_Init_Flag" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Pulse_Init_Flag" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               10
+*
+                 iSTATE0 |                               01 |                               00
+                  iSTATE |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Pulse_Init_Flag_reg' using encoding 'sequential' in module 'UART_Send'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 791.020 ; gain = 416.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module UART_Send 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 791.020 ; gain = 416.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_division/clk_out1' to pin 'clk_division/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_division/clk_out2' to pin 'clk_division/bbstub_clk_out2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_division/clk_out3' to pin 'clk_division/bbstub_clk_out3/O'
+INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 824.086 ; gain = 449.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 833.617 ; gain = 458.840
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 843.148 ; gain = 468.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 843.148 ; gain = 468.371
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 843.148 ; gain = 468.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 843.148 ; gain = 468.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 843.148 ; gain = 468.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 843.148 ; gain = 468.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 843.148 ; gain = 468.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_5_10      |         1|
+|2     |Driver_DAC_0  |         1|
+|3     |Driver_ADC_0  |         1|
+|4     |Driver_UART_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |Driver_ADC_0  |     1|
+|2     |Driver_DAC_0  |     1|
+|3     |Driver_UART_0 |     1|
+|4     |clk_5_10      |     1|
+|5     |LUT2          |     4|
+|6     |LUT3          |     2|
+|7     |LUT4          |     2|
+|8     |FDCE          |     4|
+|9     |FDPE          |     2|
+|10    |FDRE          |     8|
+|11    |LDC           |     1|
+|12    |IBUF          |    11|
+|13    |OBUF          |     6|
++------+--------------+------+
+
+Report Instance Areas: 
++------+-------------+----------+------+
+|      |Instance     |Module    |Cells |
++------+-------------+----------+------+
+|1     |top          |          |    84|
+|2     |  UART_Send0 |UART_Send |    23|
++------+-------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 843.148 ; gain = 468.371
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 843.148 ; gain = 212.773
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 843.148 ; gain = 468.371
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 845.121 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LDC => LDCE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 3 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 845.121 ; gain = 482.574
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 845.121 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/fpga/Instrumentation/Instrumentation.runs/synth_1/Instrumentation.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Instrumentation_utilization_synth.rpt -pb Instrumentation_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 11:14:39 2020...

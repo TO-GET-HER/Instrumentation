@@ -1,0 +1,18 @@
+
+*** Running vivado
+    with args -log Driver_ADC_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Driver_ADC_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Driver_ADC_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/fpga/IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2018.3/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:Driver_SK6805:1.0'. The one found in IP location 'e:/fpga/IP_Core/Driver-SK6805-IP/IP' will take precedence over the same IP in location e:/fpga/IP_Core/LED-IP/Driver-SK6805-IP/IP
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dvi:1.2'. The one found in IP location 'e:/fpga/IP_Core/Mini-HDMI-IP/IP/RGB2DVI_IP' will take precedence over the same IP in location e:/fpga/IP_Core/RGB2DVI_IP
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP Driver_ADC_0, cache-ID = cb9854eb6d77e302.
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 29 14:39:27 2020...

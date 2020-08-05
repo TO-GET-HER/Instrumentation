@@ -1,0 +1,20 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+E:/fpga/Instrumentation/Instrumentation.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+E:/fpga/Instrumentation/Instrumentation.srcs/sim_1/new/testbench.v,1595927454,verilog,,,,testbench,,,../../../../Instrumentation.srcs/sources_1/ip/clk_5_10,,,,,
+E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_ADC_0/sim/Clk_Division.v,1595907598,verilog,,E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_ADC_0/sim/Freq_Cal.v,,Clk_Division,,,../../../../Instrumentation.srcs/sources_1/ip/clk_5_10,,,,,
+E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_ADC_0/sim/Driver_ADC.v,1595907598,verilog,,E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_ADC_0/sim/Driver_ADC_0.v,,Driver_ADC,,,../../../../Instrumentation.srcs/sources_1/ip/clk_5_10,,,,,
+E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_ADC_0/sim/Driver_ADC_0.v,1595907598,verilog,,E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_DAC_0/src/Sin_Rom/sim/Sin_Rom.v,,Driver_ADC_0,,,../../../../Instrumentation.srcs/sources_1/ip/clk_5_10,,,,,
+E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_ADC_0/sim/Freq_Cal.v,1595907598,verilog,,E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_ADC_0/sim/Driver_ADC.v,,Freq_Cal,,,../../../../Instrumentation.srcs/sources_1/ip/clk_5_10,,,,,
+E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_ADC_0/src/Wave_Ram/sim/Wave_Ram.v,1595907602,verilog,,E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_ADC_0/sim/Clk_Division.v,,Wave_Ram,,,../../../../Instrumentation.srcs/sources_1/ip/clk_5_10,,,,,
+E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_DAC_0/sim/DDS_Addr_Generator.v,1595907618,verilog,,E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_DAC_0/sim/Driver_DAC.v,,DDS_Addr_Generator,,,../../../../Instrumentation.srcs/sources_1/ip/clk_5_10,,,,,
+E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_DAC_0/sim/Driver_DAC.v,1595907618,verilog,,E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_DAC_0/sim/Driver_DAC_0.v,,Driver_DAC,,,../../../../Instrumentation.srcs/sources_1/ip/clk_5_10,,,,,
+E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_DAC_0/sim/Driver_DAC_0.v,1595907618,verilog,,E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/clk_5_10/clk_5_10_clk_wiz.v,,Driver_DAC_0,,,../../../../Instrumentation.srcs/sources_1/ip/clk_5_10,,,,,
+E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_DAC_0/src/Sin_Rom/sim/Sin_Rom.v,1595907622,verilog,,E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_DAC_0/src/Square_Rom/sim/Square_Rom.v,,Sin_Rom,,,../../../../Instrumentation.srcs/sources_1/ip/clk_5_10,,,,,
+E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_DAC_0/src/Square_Rom/sim/Square_Rom.v,1595907623,verilog,,E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_DAC_0/src/Triangle_Rom/sim/Triangle_Rom.v,,Square_Rom,,,../../../../Instrumentation.srcs/sources_1/ip/clk_5_10,,,,,
+E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_DAC_0/src/Triangle_Rom/sim/Triangle_Rom.v,1595907623,verilog,,E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_DAC_0/sim/DDS_Addr_Generator.v,,Triangle_Rom,,,../../../../Instrumentation.srcs/sources_1/ip/clk_5_10,,,,,
+E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/clk_5_10/clk_5_10.v,1595908111,verilog,,E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/new/Instrumentation.v,,clk_5_10,,,../../../../Instrumentation.srcs/sources_1/ip/clk_5_10,,,,,
+E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/clk_5_10/clk_5_10_clk_wiz.v,1595908111,verilog,,E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/clk_5_10/clk_5_10.v,,clk_5_10_clk_wiz,,,../../../../Instrumentation.srcs/sources_1/ip/clk_5_10,,,,,
+E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/new/Instrumentation.v,1595927674,verilog,,E:/fpga/Instrumentation/Instrumentation.srcs/sim_1/new/testbench.v,,Instrumentation,,,../../../../Instrumentation.srcs/sources_1/ip/clk_5_10,,,,,

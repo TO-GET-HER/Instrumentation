@@ -1,0 +1,125 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jul 29 12:27:50 2020
+# Process ID: 17628
+# Current directory: E:/fpga/Instrumentation
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19192 E:\fpga\Instrumentation\Instrumentation.xpr
+# Log file: E:/fpga/Instrumentation/vivado.log
+# Journal file: E:/fpga/Instrumentation\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/fpga/Instrumentation/Instrumentation.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/fpga/IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2018.3/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:Driver_SK6805:1.0'. The one found in IP location 'e:/fpga/IP_Core/Driver-SK6805-IP/IP' will take precedence over the same IP in location e:/fpga/IP_Core/LED-IP/Driver-SK6805-IP/IP
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dvi:1.2'. The one found in IP location 'e:/fpga/IP_Core/Mini-HDMI-IP/IP/RGB2DVI_IP' will take precedence over the same IP in location e:/fpga/IP_Core/RGB2DVI_IP
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:50 . Memory (MB): peak = 763.863 ; gain = 190.219
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Wed Jul 29 12:31:21 2020] Launched synth_1...
+Run output will be captured here: E:/fpga/Instrumentation/Instrumentation.runs/synth_1/runme.log
+[Wed Jul 29 12:31:21 2020] Launched impl_1...
+Run output will be captured here: E:/fpga/Instrumentation/Instrumentation.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+[Wed Jul 29 12:34:42 2020] Launched impl_1...
+Run output will be captured here: E:/fpga/Instrumentation/Instrumentation.runs/impl_1/runme.log
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+[Wed Jul 29 12:39:23 2020] Launched impl_1...
+Run output will be captured here: E:/fpga/Instrumentation/Instrumentation.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+[Wed Jul 29 12:44:07 2020] Launched impl_1...
+Run output will be captured here: E:/fpga/Instrumentation/Instrumentation.runs/impl_1/runme.log
+convert_ips [get_files  E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_ADC_0/Driver_ADC_0.xci]
+INFO: [filemgmt 56-106] Converting IP 'Driver_ADC_0' into core container format.
+INFO: [filemgmt 56-101] Creating core container 'E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_ADC_0.xcix' for IP 'Driver_ADC_0'
+export_ip_user_files -of_objects  [get_files  E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_ADC_0/Driver_ADC_0.xci] -sync -lib_map_path [list {modelsim=E:/fpga/Instrumentation/Instrumentation.cache/compile_simlib/modelsim} {questa=E:/fpga/Instrumentation/Instrumentation.cache/compile_simlib/questa} {riviera=E:/fpga/Instrumentation/Instrumentation.cache/compile_simlib/riviera} {activehdl=E:/fpga/Instrumentation/Instrumentation.cache/compile_simlib/activehdl}] -force -quiet
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+[Wed Jul 29 14:19:53 2020] Launched impl_1...
+Run output will be captured here: E:/fpga/Instrumentation/Instrumentation.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+[Wed Jul 29 14:37:34 2020] Launched impl_1...
+Run output will be captured here: E:/fpga/Instrumentation/Instrumentation.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1191.371 ; gain = 0.000
+reset_property  ALL_PROPS  [get_ips Driver_ADC_0]
+generate_target all [get_files  E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_ADC_0/Driver_ADC_0.xci]
+export_ip_user_files -of_objects [get_files E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_ADC_0/Driver_ADC_0.xci] -no_script -sync -force -quiet
+reset_run Driver_ADC_0_synth_1
+launch_runs -jobs 2 Driver_ADC_0_synth_1
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_ADC_0/Driver_ADC_0.xci' is already up-to-date
+[Wed Jul 29 14:39:10 2020] Launched Driver_ADC_0_synth_1...
+Run output will be captured here: E:/fpga/Instrumentation/Instrumentation.runs/Driver_ADC_0_synth_1/runme.log
+export_simulation -of_objects [get_files E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/ip/Driver_ADC_0/Driver_ADC_0.xci] -directory E:/fpga/Instrumentation/Instrumentation.ip_user_files/sim_scripts -ip_user_files_dir E:/fpga/Instrumentation/Instrumentation.ip_user_files -ipstatic_source_dir E:/fpga/Instrumentation/Instrumentation.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/fpga/Instrumentation/Instrumentation.cache/compile_simlib/modelsim} {questa=E:/fpga/Instrumentation/Instrumentation.cache/compile_simlib/questa} {riviera=E:/fpga/Instrumentation/Instrumentation.cache/compile_simlib/riviera} {activehdl=E:/fpga/Instrumentation/Instrumentation.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Wed Jul 29 14:39:48 2020] Launched synth_1...
+Run output will be captured here: E:/fpga/Instrumentation/Instrumentation.runs/synth_1/runme.log
+[Wed Jul 29 14:39:48 2020] Launched impl_1...
+Run output will be captured here: E:/fpga/Instrumentation/Instrumentation.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+[Wed Jul 29 14:47:20 2020] Launched impl_1...
+Run output will be captured here: E:/fpga/Instrumentation/Instrumentation.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1191.371 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Wed Jul 29 14:49:35 2020] Launched synth_1...
+Run output will be captured here: E:/fpga/Instrumentation/Instrumentation.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Wed Jul 29 14:51:07 2020] Launched impl_1...
+Run output will be captured here: E:/fpga/Instrumentation/Instrumentation.runs/impl_1/runme.log
+set_property is_global_include true [get_files  E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/new/Instrumentation.v]
+reset_run impl_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs impl_1 -jobs 2
+[Wed Jul 29 14:51:26 2020] Launched impl_1...
+Run output will be captured here: E:/fpga/Instrumentation/Instrumentation.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1191.371 ; gain = 0.000
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+[Wed Jul 29 14:52:13 2020] Launched impl_1...
+Run output will be captured here: E:/fpga/Instrumentation/Instrumentation.runs/impl_1/runme.log
+reset_run impl_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+close_project
+open_project E:/fpga/Instrumentation/Instrumentation.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/fpga/IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2018.3/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:Driver_SK6805:1.0'. The one found in IP location 'e:/fpga/IP_Core/Driver-SK6805-IP/IP' will take precedence over the same IP in location e:/fpga/IP_Core/LED-IP/Driver-SK6805-IP/IP
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dvi:1.2'. The one found in IP location 'e:/fpga/IP_Core/Mini-HDMI-IP/IP/RGB2DVI_IP' will take precedence over the same IP in location e:/fpga/IP_Core/RGB2DVI_IP
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1191.371 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 2
+[Wed Jul 29 14:58:59 2020] Launched impl_1...
+Run output will be captured here: E:/fpga/Instrumentation/Instrumentation.runs/impl_1/runme.log
+set_property is_global_include false [get_files  E:/fpga/Instrumentation/Instrumentation.srcs/sources_1/new/Instrumentation.v]
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+[Wed Jul 29 15:00:47 2020] Launched impl_1...
+Run output will be captured here: E:/fpga/Instrumentation/Instrumentation.runs/impl_1/runme.log
+file mkdir E:/fpga/Instrumentation/Instrumentation.srcs/constrs_1
+file mkdir E:/fpga/Instrumentation/Instrumentation.srcs/constrs_1/new
+close [ open E:/fpga/Instrumentation/Instrumentation.srcs/constrs_1/new/system.xdc w ]
+add_files -fileset constrs_1 E:/fpga/Instrumentation/Instrumentation.srcs/constrs_1/new/system.xdc
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 29 17:46:57 2020...

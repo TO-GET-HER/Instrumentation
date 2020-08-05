@@ -1,0 +1,62 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Jul 31 11:15:32 2020
+| Host         : zlxt running 64-bit major release  (build 9200)
+| Command      : report_drc -file Instrumentation_drc_opted.rpt -pb Instrumentation_drc_opted.pb -rpx Instrumentation_drc_opted.rpx
+| Design       : Instrumentation
+| Device       : xc7s15ftgb196-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 3
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| CFGBVS-1    | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties         | 1          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 2          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UART0/inst/UART_Clk/clk_out is driving clock pin of 15 cells. This could lead to large hold time violations. Involved cells are:
+UART0/inst/UART_Tx0/Data_Cnt_reg[0], UART0/inst/UART_Tx0/Data_Cnt_reg[1], UART0/inst/UART_Tx0/Data_Cnt_reg[2], UART0/inst/UART_Tx0/FSM_sequential_State_Current_reg[0], UART0/inst/UART_Tx0/FSM_sequential_State_Current_reg[1], UART0/inst/UART_Tx0/FSM_sequential_State_Current_reg[2], UART0/inst/UART_Tx0/Send_Buffer_reg[0], UART0/inst/UART_Tx0/Send_Buffer_reg[1], UART0/inst/UART_Tx0/Send_Buffer_reg[2], UART0/inst/UART_Tx0/Send_Buffer_reg[3], UART0/inst/UART_Tx0/Send_Buffer_reg[4], UART0/inst/UART_Tx0/Send_Buffer_reg[5], UART0/inst/UART_Tx0/Send_Buffer_reg[6], UART0/inst/UART_Tx0/Send_Buffer_reg[7], UART0/inst/UART_Tx0/Tx_reg (the first 15 of 15 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT UART0/inst/UART_Tx0/Tx_ACK_INST_0 is driving clock pin of 8 cells. This could lead to large hold time violations. Involved cells are:
+UART_Send0/Send_Buffer_reg[0], UART_Send0/Send_Buffer_reg[1], UART_Send0/Send_Buffer_reg[2], UART_Send0/Send_Buffer_reg[3], UART_Send0/Send_Buffer_reg[4], UART_Send0/Send_Buffer_reg[5], UART_Send0/Send_Buffer_reg[6], UART_Send0/Send_Buffer_reg[7]
+Related violations: <none>
+
+
